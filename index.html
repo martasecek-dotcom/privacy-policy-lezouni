@@ -1,0 +1,320 @@
+<!doctype html>
+<!-- Lezouni – Lezouni – zásady ochrany soukromí. Stejný vzhled jako stránky ostatních aplikací (Mood Swing), jen zelená barva. -->
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lezouni – zásady ochrany soukromí</title>
+<meta name="description" content="Zásady ochrany soukromí a smazání účtu – hra Lezouni. Privacy policy and account deletion – Lezouni game.">
+<style>
+  :root {
+    --bg: #f6faf2;
+    --card: #ffffff;
+    --text: #1f2a1c;
+    --muted: #5f6b58;
+    --line: #dde8d4;
+    --accent: #3e8f33;
+    --accent-soft: #e6f3dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141a13;
+      --card: #1c241a;
+      --text: #e8efe4;
+      --muted: #a3b09b;
+      --line: #2f3b2b;
+      --accent: #84d474;
+      --accent-soft: #223020;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 16px 8px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .logo { font-size: 40px; line-height: 1; }
+  .brand h1 { margin: 0; font-size: 1.5rem; letter-spacing: -0.01em; }
+  .brand p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+  .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button {
+    border: 0; background: transparent; color: var(--muted);
+    padding: 6px 14px; font: inherit; font-size: 0.9rem; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 48px; }
+  nav.toc {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 16px 0 24px;
+    font-size: 0.95rem;
+  }
+  nav.toc a { color: var(--text); margin-right: 16px; white-space: nowrap; }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 8px 24px 16px;
+    margin-bottom: 24px;
+  }
+  h2 { font-size: 1.3rem; margin: 20px 0 4px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 4px; }
+  p, li { color: var(--text); }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 0.85rem; }
+  body:not(.en) [lang="en"] { display: none; }
+  body.en [lang="cs"] { display: none; }
+  @media (max-width: 520px) { section.card { padding: 4px 16px 12px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo" aria-hidden="true">🐛</div>
+    <div>
+      <h1>Lezouni</h1>
+      <p lang="cs">Zásady ochrany soukromí</p>
+      <p lang="en">Privacy policy</p>
+    </div>
+  </div>
+  <div class="lang" role="group" aria-label="Jazyk / Language">
+    <button type="button" data-lang="cs" aria-pressed="true">Čeština</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================ ČESKY ============================ -->
+<div lang="cs">
+  <p class="muted">Platné od 17. 11. 2026</p>
+  <nav class="toc">
+    <a href="#soukromi">Zásady ochrany soukromí</a>
+    <a href="#smazani">Smazání účtu a dat</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="https://martasecek-dotcom.github.io/lezouni/pravidla/?lang=cs">Pravidla používání</a>
+  </nav>
+
+  <section class="card" id="soukromi">
+    <h2>Zásady ochrany soukromí</h2>
+    <p>Tyto zásady popisují, jak hra <strong>Lezouni</strong> pro Android (<code>cz.palla.cervici</code>) zpracovává osobní údaje. Správcem údajů je Martin Palla (kontakt níže).</p>
+
+    <h3>Shrnutí</h3>
+    <ul>
+      <li>Kampaň a denní výzvu můžete hrát bez registrace – postup se ukládá v telefonu.</li>
+      <li>Pro online funkce (přezdívka, žebříčky, Levely hráčů) hra vytvoří anonymní účet. Přihlášení přes Google je dobrovolné.</li>
+      <li>Hra zatím nemá reklamy ani analytiku, nepoužívá reklamní identifikátor a údaje neprodáváme.</li>
+    </ul>
+
+    <h3>Jaké údaje zpracováváme</h3>
+    <div class="scroll"><table>
+      <tr><th>Údaj</th><th>Kdy</th><th>Kdo ho vidí</th></tr>
+      <tr><td>Anonymní identifikátor účtu (Firebase UID)</td><td>vždy při spuštění s internetem</td><td>nikdo z hráčů</td></tr>
+      <tr><td>Přezdívka</td><td>jen když si ji nastavíte</td><td>veřejná</td></tr>
+      <tr><td>Skóre v žebříčcích (hvězdičky v kampani, nejdelší série, výsledek dnešní denní výzvy)</td><td>jen s přezdívkou</td><td>veřejné pod přezdívkou</td></tr>
+      <tr><td>Hodnocení a nahlášení levelů a přezdívek</td><td>když hodnotíte nebo nahlašujete</td><td>jen správce (s identifikátorem účtu)</td></tr>
+      <tr><td>E-mail účtu Google</td><td>jen při přihlášení přes Google</td><td>jen vy (zobrazí se v okně Účet)</td></tr>
+      <tr><td>Záloha postupu (hvězdičky, skóre, mince, denní výzvy, oblečky, sloty, souhlas s pravidly)</td><td>jen s účtem Google</td><td>jen vy</td></tr>
+      <tr><td>Zveřejněné levely (level, řešení, název)</td><td>jen když level zveřejníte (účet Google)</td><td>veřejné pod přezdívkou</td></tr>
+    </table></div>
+    <p>Postup, nastavení, vlastní levely z editoru a seznam zablokovaných autorů zůstávají jen v telefonu (kromě zálohy u účtu Google). Nezpracováváme polohu, kontakty, fotografie ani reklamní identifikátor.</p>
+
+    <h3>Proč a na jakém základě</h3>
+    <ul>
+      <li>Fungování hry – účet, přezdívka, žebříčky, zveřejňování a hraní levelů, záloha postupu (plnění smlouvy, čl. 6 odst. 1 písm. b GDPR).</li>
+      <li>Ochrana hráčů a moderace – filtr nevhodných slov, nahlášení, skrytí a odstranění obsahu, zákaz zveřejňování při porušení pravidel (oprávněný zájem, čl. 6 odst. 1 písm. f GDPR).</li>
+    </ul>
+
+    <h3>Kdo údaje zpracovává</h3>
+    <p>Údaje ukládáme ve službě <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore) společnosti Google Ireland Limited jako zpracovatele. Databáze je umístěna v Evropě. Google může v rámci svých služeb přenášet údaje i mimo EU; přenos je chráněn standardními smluvními doložkami, případně rámcem EU–USA pro ochranu údajů. Více: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. Údaje nepředáváme nikomu dalšímu.</p>
+
+    <h3>Jak dlouho</h3>
+    <p>Údaje uchováváme, dokud máte účet. Starší záznamy denních žebříčků pravidelně mažeme. Po smazání účtu viz níže.</p>
+
+    <h3>Vaše práva</h3>
+    <p>Máte právo na přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování, přenositelnost a právo vznést námitku. Napište nám na <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a>. Máte také právo podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://uoou.gov.cz">uoou.gov.cz</a>).</p>
+
+    <h3>Děti</h3>
+    <p>Hra sbírá jen nezbytné údaje. Přezdívky a názvy levelů procházejí filtrem nevhodných slov a lze je nahlásit. Rodiče nás mohou kdykoli kontaktovat kvůli smazání údajů dítěte.</p>
+
+    <h3>Změny</h3>
+    <p>Když zásady změníme (například až hra dostane reklamy nebo analytiku), aktualizujeme tuto stránku a datum účinnosti.</p>
+  </section>
+
+  <section class="card" id="smazani">
+    <h2>Smazání účtu a dat</h2>
+    <h3>Přímo ve hře</h3>
+    <ol>
+      <li>Otevřete hru Lezouni.</li>
+      <li>Na hlavní obrazovce ťukněte vpravo nahoře na ikonu <strong>Účet</strong>.</li>
+      <li>Zvolte <strong>Smazat účet</strong> a potvrďte. U účtu Google se může z bezpečnostních důvodů ještě jednou zobrazit přihlášení.</li>
+    </ol>
+    <h3>Bez aplikace (e-mailem)</h3>
+    <p>Napište na <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a> s předmětem „Smazání účtu Lezouni“. Uveďte svou přezdívku a u účtu Google i e-mail účtu (žádost pošlete z této adresy). Účet smažeme nejpozději do 30 dnů a odpovíme vám.</p>
+    <h3>Co se smaže</h3>
+    <ul>
+      <li>účet (anonymní nebo Google) a přezdívka,</li>
+      <li>profil a záloha postupu,</li>
+      <li>všechny vaše zveřejněné levely,</li>
+      <li>vaše záznamy v žebříčcích (starší denní žebříčky mažeme pravidelně).</li>
+    </ul>
+    <h3>Co může zůstat</h3>
+    <ul>
+      <li>hodnocení a nahlášení, která jste provedli u cizích levelů a přezdívek – jen s anonymním identifikátorem, bez přezdívky a e-mailu (kvůli ochraně ostatních hráčů a správnosti hodnocení),</li>
+      <li>postup uložený v telefonu – smažete ho odinstalováním hry nebo vymazáním dat aplikace.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Martin Palla – vývojář hry Lezouni<br>Podnikající fyzická osoba, IČO: 30260957<br>Sadová 1520, 769 01 Holešov, Česká republika<br>E-mail: <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a></p>
+  </section>
+</div>
+
+<!-- ============================ ENGLISH ============================ -->
+<div lang="en">
+  <p class="muted">Effective from 17 November 2026</p>
+  <nav class="toc">
+    <a href="#privacy">Privacy policy</a>
+    <a href="#delete">Account and data deletion</a>
+    <a href="#contact">Contact</a>
+    <a href="https://martasecek-dotcom.github.io/lezouni/pravidla/?lang=en">Terms of use</a>
+  </nav>
+
+  <section class="card" id="privacy">
+    <h2>Privacy policy</h2>
+    <p>This policy describes how the <strong>Lezouni</strong> game for Android (<code>cz.palla.cervici</code>) processes personal data. The controller is Martin Palla (contact below).</p>
+
+    <h3>Summary</h3>
+    <ul>
+      <li>You can play the campaign and the daily challenge without registering – progress is stored on your phone.</li>
+      <li>For online features (nickname, leaderboards, Player levels) the game creates an anonymous account. Signing in with Google is optional.</li>
+      <li>The game currently has no ads or analytics, does not use the advertising ID and we do not sell data.</li>
+    </ul>
+
+    <h3>What we collect</h3>
+    <div class="scroll"><table>
+      <tr><th>Data</th><th>When</th><th>Who can see it</th></tr>
+      <tr><td>Anonymous account ID (Firebase UID)</td><td>whenever the game runs online</td><td>no other player</td></tr>
+      <tr><td>Nickname</td><td>only if you set one</td><td>public</td></tr>
+      <tr><td>Leaderboard scores (campaign stars, best streak, today’s daily result)</td><td>only with a nickname</td><td>public under your nickname</td></tr>
+      <tr><td>Ratings and reports of levels and nicknames</td><td>when you rate or report</td><td>only the moderator (with the account ID)</td></tr>
+      <tr><td>Google account e-mail</td><td>only with Google sign-in</td><td>only you (shown on the Account screen)</td></tr>
+      <tr><td>Progress backup (stars, scores, coins, daily challenges, outfits, slots, terms acceptance)</td><td>only with a Google account</td><td>only you</td></tr>
+      <tr><td>Published levels (level, solution, name)</td><td>only when you publish (Google account)</td><td>public under your nickname</td></tr>
+    </table></div>
+    <p>Progress, settings, your own editor levels and blocked authors stay on your phone (except the Google account backup). We do not collect location, contacts, photos or the advertising ID.</p>
+
+    <h3>Why and on what basis</h3>
+    <ul>
+      <li>Running the game – account, nickname, leaderboards, publishing and playing levels, progress backup (performance of a contract, Art. 6(1)(b) GDPR).</li>
+      <li>Protecting players and moderation – word filter, reports, hiding and removing content, publishing bans (legitimate interest, Art. 6(1)(f) GDPR).</li>
+    </ul>
+
+    <h3>Processor</h3>
+    <p>Data is stored in <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore) by Google Ireland Limited as a processor. The database is located in Europe. Transfers outside the EU, if any, are covered by Standard Contractual Clauses or the EU–US Data Privacy Framework. More: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. We share data with no one else.</p>
+
+    <h3>Retention</h3>
+    <p>Data is kept while your account exists. Older daily leaderboard entries are deleted regularly. For account deletion see below.</p>
+
+    <h3>Your rights</h3>
+    <p>You have the right of access, rectification, erasure, restriction, portability and objection – contact <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a>. You may also complain to the Czech data protection authority (<a href="https://uoou.gov.cz">uoou.gov.cz</a>) or your local authority.</p>
+
+    <h3>Children</h3>
+    <p>The game collects only necessary data. Nicknames and level names are filtered and can be reported. Parents can contact us at any time to delete a child’s data.</p>
+
+    <h3>Changes</h3>
+    <p>If we change this policy (for example when ads or analytics are added), we will update this page and its effective date.</p>
+  </section>
+
+  <section class="card" id="delete">
+    <h2>Account and data deletion</h2>
+    <h3>In the game</h3>
+    <ol>
+      <li>Open Lezouni.</li>
+      <li>On the main screen tap the <strong>Account</strong> icon in the top right corner.</li>
+      <li>Choose <strong>Delete account</strong> and confirm. For a Google account you may be asked to sign in again for security.</li>
+    </ol>
+    <h3>Without the app (by e-mail)</h3>
+    <p>Write to <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a> with the subject “Delete account Lezouni”, your nickname and, for a Google account, the account e-mail (send the request from that address). We delete the account within 30 days and reply to you.</p>
+    <h3>What is deleted</h3>
+    <ul>
+      <li>the account (anonymous or Google) and nickname,</li>
+      <li>your profile and progress backup,</li>
+      <li>all your published levels,</li>
+      <li>your leaderboard entries (older daily leaderboards are deleted regularly).</li>
+    </ul>
+    <h3>What may remain</h3>
+    <ul>
+      <li>ratings and reports you made on other players’ levels and nicknames – with the anonymous ID only, without nickname or e-mail (to protect other players and keep ratings correct),</li>
+      <li>progress stored on your phone – remove it by uninstalling the game or clearing the app data.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>Contact</h2>
+    <p>Martin Palla – developer of Lezouni<br>Sole trader, company ID (IČO): 30260957<br>Sadová 1520, 769 01 Holešov, Czech Republic<br>E-mail: <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a></p>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <span lang="cs">© 2026 Martin Palla · Lezouni</span>
+  <span lang="en">© 2026 Martin Palla · Lezouni</span>
+</footer>
+
+<script>
+  var enAnchors = ['privacy', 'delete', 'contact'];
+  var csAnchors = ['soukromi', 'smazani', 'kontakt'];
+
+  function setLang(lang) {
+    document.body.classList.toggle('en', lang === 'en');
+    document.documentElement.lang = lang;
+    document.title = lang === 'en' ? 'Lezouni – privacy policy' : 'Lezouni – zásady ochrany soukromí';
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.lang); });
+  });
+
+  // Jazyk: ?lang=en / anglická kotva → angličtina, česká kotva → čeština,
+  // jinak dřívější volba, jinak jazyk prohlížeče.
+  var q = new URLSearchParams(location.search).get('lang');
+  var hash = location.hash.replace('#', '');
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var lang = q === 'en' || q === 'cs' ? q
+    : enAnchors.indexOf(hash) >= 0 ? 'en'
+    : csAnchors.indexOf(hash) >= 0 ? 'cs'
+    : saved || ((navigator.language || 'cs').toLowerCase().indexOf('cs') === 0 ? 'cs' : 'en');
+  setLang(lang);
+  if (hash) { var t = document.getElementById(hash); if (t) t.scrollIntoView(); }
+</script>
+</body>
+</html>
