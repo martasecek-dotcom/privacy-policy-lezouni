@@ -108,7 +108,7 @@
 
 <!-- ============================ ČESKY ============================ -->
 <div lang="cs">
-  <p class="muted">Platné od 17. 11. 2026</p>
+  <p class="muted">Platné od 18. 11. 2026</p>
   <nav class="toc">
     <a href="#soukromi">Zásady ochrany soukromí</a>
     <a href="#smazani">Smazání účtu a dat</a>
@@ -124,7 +124,10 @@
     <ul>
       <li>Kampaň a denní výzvu můžete hrát bez registrace – postup se ukládá v telefonu.</li>
       <li>Pro online funkce (přezdívka, žebříčky, Levely hráčů) hra vytvoří anonymní účet. Přihlášení přes Google je dobrovolné.</li>
-      <li>Hra zatím nemá reklamy ani analytiku, nepoužívá reklamní identifikátor a údaje neprodáváme.</li>
+      <li>Hra zobrazuje reklamy služby <strong>Google AdMob</strong>: celoobrazovkovou reklamu nejdříve po skončení levelu a dobrovolné reklamy za odměnu (nápověda, srdíčko navíc). Kvůli reklamám Google zpracovává reklamní identifikátor a údaje o zařízení – podrobnosti níže.</li>
+      <li>V Evropě se před zobrazením reklam ptáme na souhlas. Souhlas můžete kdykoli změnit ve hře v <strong>Nastavení → Soukromí reklam</strong>.</li>
+      <li>Se souhlasem používáme <strong>Firebase Analytics</strong> – anonymní statistiky, jak se hra hraje (např. které levely jsou moc těžké), abychom ji mohli vylepšovat. Bez souhlasu se nic neodesílá. Souhlas změníte v <strong>Nastavení → Analytika</strong>.</li>
+      <li>Údaje neprodáváme.</li>
     </ul>
 
     <h3>Jaké údaje zpracováváme</h3>
@@ -137,29 +140,36 @@
       <tr><td>E-mail účtu Google</td><td>jen při přihlášení přes Google</td><td>jen vy (zobrazí se v okně Účet)</td></tr>
       <tr><td>Záloha postupu (hvězdičky, skóre, mince, denní výzvy, oblečky, sloty, souhlas s pravidly)</td><td>jen s účtem Google</td><td>jen vy</td></tr>
       <tr><td>Zveřejněné levely (level, řešení, název)</td><td>jen když level zveřejníte (účet Google)</td><td>veřejné pod přezdívkou</td></tr>
+      <tr><td>Reklamní identifikátor zařízení (Android Advertising ID), IP adresa, údaje o zařízení a aplikaci (model, systém, jazyk), interakce s reklamami (zobrazení, kliknutí)</td><td>když se načítá nebo zobrazuje reklama</td><td>Google (AdMob), ne vývojář ani hráči</td></tr>
+      <tr><td>Vaše volba souhlasu s reklamami</td><td>v Evropě při prvním spuštění a při změně v Nastavení</td><td>uloží se v telefonu, zpracovává ji Google</td></tr>
+      <tr><td>Statistiky používání (Firebase Analytics): náhodný identifikátor instalace aplikace, události ve hře (spuštění, dohrání nebo prohra levelu, použití nápovědy, zhlédnutí reklamy za odměnu), délka používání, model zařízení, verze systému a aplikace, jazyk, přibližná země/oblast odvozená z IP adresy</td><td>jen když s analytikou souhlasíte</td><td>jen vývojář, souhrnně (bez jmen, e-mailů a přezdívek)</td></tr>
     </table></div>
-    <p>Postup, nastavení, vlastní levely z editoru a seznam zablokovaných autorů zůstávají jen v telefonu (kromě zálohy u účtu Google). Nezpracováváme polohu, kontakty, fotografie ani reklamní identifikátor.</p>
+    <p>Postup, nastavení, vlastní levely z editoru a seznam zablokovaných autorů zůstávají jen v telefonu (kromě zálohy u účtu Google). Nezpracováváme polohu, kontakty ani fotografie. Reklamní knihovna nedostává vaši přezdívku, e-mail ani postup ve hře. Do analytiky neposíláme přezdívku, e-mail, identifikátor účtu ani reklamní identifikátor.</p>
 
     <h3>Proč a na jakém základě</h3>
     <ul>
       <li>Fungování hry – účet, přezdívka, žebříčky, zveřejňování a hraní levelů, záloha postupu (plnění smlouvy, čl. 6 odst. 1 písm. b GDPR).</li>
       <li>Ochrana hráčů a moderace – filtr nevhodných slov, nahlášení, skrytí a odstranění obsahu, zákaz zveřejňování při porušení pravidel (oprávněný zájem, čl. 6 odst. 1 písm. f GDPR).</li>
+      <li>Reklamy, ze kterých je hra financována – ukládání a čtení údajů v zařízení a personalizované reklamy jen s vaším souhlasem (čl. 6 odst. 1 písm. a GDPR). Pokud souhlas nedáte, může Google zobrazovat jen neosobní nebo omezené reklamy, případně žádné. Měření reklam a ochrana proti podvodům (oprávněný zájem, čl. 6 odst. 1 písm. f GDPR).</li>
+      <li>Statistiky používání pro zlepšování hry (vyvážení obtížnosti levelů, hledání chyb) – jen s vaším souhlasem (čl. 6 odst. 1 písm. a GDPR).</li>
     </ul>
 
     <h3>Kdo údaje zpracovává</h3>
-    <p>Údaje ukládáme ve službě <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore) společnosti Google Ireland Limited jako zpracovatele. Databáze je umístěna v Evropě. Google může v rámci svých služeb přenášet údaje i mimo EU; přenos je chráněn standardními smluvními doložkami, případně rámcem EU–USA pro ochranu údajů. Více: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. Údaje nepředáváme nikomu dalšímu.</p>
+    <p>Údaje ukládáme ve službě <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore, Firebase Analytics) společnosti Google Ireland Limited jako zpracovatele. Databáze je umístěna v Evropě. Google může v rámci svých služeb přenášet údaje i mimo EU; přenos je chráněn standardními smluvními doložkami, případně rámcem EU–USA pro ochranu údajů. Více: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+    <p>Reklamy zajišťuje služba <strong>Google AdMob</strong> (Google Ireland Limited). Při zobrazování reklam působí Google jako samostatný správce údajů podle svých zásad: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> a <a href="https://policies.google.com/technologies/partner-sites">jak Google používá údaje z aplikací partnerů</a>. Obsah reklam je ve hře omezen na hodnocení nejvýše PG (žádné reklamy pro dospělé). Jiným subjektům údaje nepředáváme.</p>
 
     <h3>Jak dlouho</h3>
-    <p>Údaje uchováváme, dokud máte účet. Starší záznamy denních žebříčků pravidelně mažeme. Po smazání účtu viz níže.</p>
+    <p>Údaje uchováváme, dokud máte účet. Starší záznamy denních žebříčků pravidelně mažeme. Po smazání účtu viz níže. Údaje pro reklamy uchovává Google podle svých zásad. Podrobné záznamy z analytiky se automaticky mažou po 2 měsících; dál zůstávají jen souhrnné statistiky (např. kolik hráčů dohrálo level), ze kterých nelze poznat jednotlivé hráče.</p>
 
     <h3>Vaše práva</h3>
     <p>Máte právo na přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování, přenositelnost a právo vznést námitku. Napište nám na <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a>. Máte také právo podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://uoou.gov.cz">uoou.gov.cz</a>).</p>
+    <p>Souhlas s reklamami můžete kdykoli odvolat nebo změnit ve hře v <strong>Nastavení → Soukromí reklam</strong> (položka se zobrazuje tam, kde je souhlas vyžadován). Reklamní identifikátor můžete resetovat nebo smazat v nastavení telefonu (Nastavení → Soukromí / Google → Reklamy). Souhlas s analytikou můžete kdykoli odvolat ve hře v <strong>Nastavení → Analytika</strong>; odvolání neovlivní zpracování před ním.</p>
 
     <h3>Děti</h3>
-    <p>Hra sbírá jen nezbytné údaje. Přezdívky a názvy levelů procházejí filtrem nevhodných slov a lze je nahlásit. Rodiče nás mohou kdykoli kontaktovat kvůli smazání údajů dítěte.</p>
+    <p>Hra je určena hráčům od 13 let a není zaměřena na děti. Sbírá jen nezbytné údaje, reklamy jsou omezeny na obsah vhodný pro všechny (nejvýše PG). Přezdívky a názvy levelů procházejí filtrem nevhodných slov a lze je nahlásit. Rodiče nás mohou kdykoli kontaktovat kvůli smazání údajů dítěte.</p>
 
     <h3>Změny</h3>
-    <p>Když zásady změníme (například až hra dostane reklamy nebo analytiku), aktualizujeme tuto stránku a datum účinnosti.</p>
+    <p>Když zásady změníme (například až hra dostane nákupy v aplikaci), aktualizujeme tuto stránku a datum účinnosti.</p>
   </section>
 
   <section class="card" id="smazani">
@@ -182,7 +192,9 @@
     <h3>Co může zůstat</h3>
     <ul>
       <li>hodnocení a nahlášení, která jste provedli u cizích levelů a přezdívek – jen s anonymním identifikátorem, bez přezdívky a e-mailu (kvůli ochraně ostatních hráčů a správnosti hodnocení),</li>
-      <li>postup uložený v telefonu – smažete ho odinstalováním hry nebo vymazáním dat aplikace.</li>
+      <li>postup uložený v telefonu – smažete ho odinstalováním hry nebo vymazáním dat aplikace,</li>
+      <li>údaje, které zpracovává Google pro reklamy – nejsou propojené s vaším herním účtem; reklamní identifikátor smažete nebo resetujete v nastavení telefonu, další možnosti najdete v zásadách Google,</li>
+      <li>statistiky z analytiky – nejsou propojené s vaším účtem ani přezdívkou; podrobné záznamy se automaticky smažou po 2 měsících, souhrnné statistiky bez možnosti identifikace zůstávají.</li>
     </ul>
   </section>
 
@@ -194,7 +206,7 @@
 
 <!-- ============================ ENGLISH ============================ -->
 <div lang="en">
-  <p class="muted">Effective from 17 November 2026</p>
+  <p class="muted">Effective from 18 November 2026</p>
   <nav class="toc">
     <a href="#privacy">Privacy policy</a>
     <a href="#delete">Account and data deletion</a>
@@ -210,7 +222,10 @@
     <ul>
       <li>You can play the campaign and the daily challenge without registering – progress is stored on your phone.</li>
       <li>For online features (nickname, leaderboards, Player levels) the game creates an anonymous account. Signing in with Google is optional.</li>
-      <li>The game currently has no ads or analytics, does not use the advertising ID and we do not sell data.</li>
+      <li>The game shows ads from <strong>Google AdMob</strong>: a full-screen ad at most after a level ends, and optional rewarded ads (a hint, an extra heart). For ads, Google processes the advertising ID and device data – details below.</li>
+      <li>In Europe we ask for your consent before showing ads. You can change it at any time in the game under <strong>Settings → Ad privacy</strong>.</li>
+      <li>With your consent we use <strong>Firebase Analytics</strong> – anonymous statistics on how the game is played (e.g. which levels are too hard) so we can improve it. Without consent nothing is sent. Change your choice in <strong>Settings → Analytics</strong>.</li>
+      <li>We do not sell data.</li>
     </ul>
 
     <h3>What we collect</h3>
@@ -223,29 +238,36 @@
       <tr><td>Google account e-mail</td><td>only with Google sign-in</td><td>only you (shown on the Account screen)</td></tr>
       <tr><td>Progress backup (stars, scores, coins, daily challenges, outfits, slots, terms acceptance)</td><td>only with a Google account</td><td>only you</td></tr>
       <tr><td>Published levels (level, solution, name)</td><td>only when you publish (Google account)</td><td>public under your nickname</td></tr>
+      <tr><td>Device advertising ID (Android Advertising ID), IP address, device and app information (model, system, language), ad interactions (views, clicks)</td><td>when an ad is loaded or shown</td><td>Google (AdMob), not the developer or other players</td></tr>
+      <tr><td>Your ad consent choice</td><td>in Europe on first launch and when changed in Settings</td><td>stored on your phone, processed by Google</td></tr>
+      <tr><td>Usage statistics (Firebase Analytics): random app installation ID, in-game events (start, completion or failure of a level, hint use, rewarded ad watched), usage time, device model, system and app version, language, approximate country/region derived from the IP address</td><td>only if you consent to analytics</td><td>only the developer, in aggregate (no names, e-mails or nicknames)</td></tr>
     </table></div>
-    <p>Progress, settings, your own editor levels and blocked authors stay on your phone (except the Google account backup). We do not collect location, contacts, photos or the advertising ID.</p>
+    <p>Progress, settings, your own editor levels and blocked authors stay on your phone (except the Google account backup). We do not collect location, contacts or photos. The ad library does not receive your nickname, e-mail or game progress. We do not send your nickname, e-mail, account ID or advertising ID to analytics.</p>
 
     <h3>Why and on what basis</h3>
     <ul>
       <li>Running the game – account, nickname, leaderboards, publishing and playing levels, progress backup (performance of a contract, Art. 6(1)(b) GDPR).</li>
       <li>Protecting players and moderation – word filter, reports, hiding and removing content, publishing bans (legitimate interest, Art. 6(1)(f) GDPR).</li>
+      <li>Ads that fund the game – storing and reading data on the device and personalised ads only with your consent (Art. 6(1)(a) GDPR). Without consent, Google may show only non-personalised or limited ads, or none. Ad measurement and fraud prevention (legitimate interest, Art. 6(1)(f) GDPR).</li>
+      <li>Usage statistics to improve the game (balancing level difficulty, finding bugs) – only with your consent (Art. 6(1)(a) GDPR).</li>
     </ul>
 
     <h3>Processor</h3>
-    <p>Data is stored in <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore) by Google Ireland Limited as a processor. The database is located in Europe. Transfers outside the EU, if any, are covered by Standard Contractual Clauses or the EU–US Data Privacy Framework. More: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. We share data with no one else.</p>
+    <p>Data is stored in <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore, Firebase Analytics) by Google Ireland Limited as a processor. The database is located in Europe. Transfers outside the EU, if any, are covered by Standard Contractual Clauses or the EU–US Data Privacy Framework. More: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+    <p>Ads are provided by <strong>Google AdMob</strong> (Google Ireland Limited). For ads, Google acts as an independent controller under its own policies: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>. Ad content in the game is limited to a maximum rating of PG (no adult ads). We share data with no one else.</p>
 
     <h3>Retention</h3>
-    <p>Data is kept while your account exists. Older daily leaderboard entries are deleted regularly. For account deletion see below.</p>
+    <p>Data is kept while your account exists. Older daily leaderboard entries are deleted regularly. For account deletion see below. Ad data is kept by Google under its own policies. Detailed analytics records are deleted automatically after 2 months; only aggregated statistics remain (e.g. how many players completed a level), which cannot identify individual players.</p>
 
     <h3>Your rights</h3>
     <p>You have the right of access, rectification, erasure, restriction, portability and objection – contact <a href="mailto:pallamartas@seznam.cz">pallamartas@seznam.cz</a>. You may also complain to the Czech data protection authority (<a href="https://uoou.gov.cz">uoou.gov.cz</a>) or your local authority.</p>
+    <p>You can withdraw or change your ad consent at any time in the game under <strong>Settings → Ad privacy</strong> (shown where consent is required). You can reset or delete the advertising ID in your phone settings (Settings → Privacy / Google → Ads). You can withdraw your analytics consent at any time in the game under <strong>Settings → Analytics</strong>; this does not affect processing before the withdrawal.</p>
 
     <h3>Children</h3>
-    <p>The game collects only necessary data. Nicknames and level names are filtered and can be reported. Parents can contact us at any time to delete a child’s data.</p>
+    <p>The game is intended for players aged 13 and over and is not directed at children. It collects only necessary data, and ads are limited to content suitable for everyone (maximum PG). Nicknames and level names are filtered and can be reported. Parents can contact us at any time to delete a child’s data.</p>
 
     <h3>Changes</h3>
-    <p>If we change this policy (for example when ads or analytics are added), we will update this page and its effective date.</p>
+    <p>If we change this policy (for example when in-app purchases are added), we will update this page and its effective date.</p>
   </section>
 
   <section class="card" id="delete">
@@ -268,7 +290,9 @@
     <h3>What may remain</h3>
     <ul>
       <li>ratings and reports you made on other players’ levels and nicknames – with the anonymous ID only, without nickname or e-mail (to protect other players and keep ratings correct),</li>
-      <li>progress stored on your phone – remove it by uninstalling the game or clearing the app data.</li>
+      <li>progress stored on your phone – remove it by uninstalling the game or clearing the app data,</li>
+      <li>data processed by Google for ads – it is not linked to your game account; delete or reset the advertising ID in your phone settings, more options are in Google’s policies,</li>
+      <li>analytics statistics – not linked to your account or nickname; detailed records are deleted automatically after 2 months, aggregated statistics that cannot identify anyone remain.</li>
     </ul>
   </section>
 
